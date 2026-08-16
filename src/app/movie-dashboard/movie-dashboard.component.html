@@ -1,0 +1,17 @@
+<div class="container-fluid mt-4">
+
+  <div class="row mb-4">
+    <div class="col-12">
+      <h1 class="text-dark fw-bold text-center display-4 text-uppercase tracking-wide">
+        Movie Cards
+      </h1>
+      <hr class="bg-light opacity-25 w-50 mx-auto">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-md-4 col-lg-4 mb-4" *ngFor="let movie of moviesArr">
+      <app-movie-card [movieObj]="movie"></app-movie-card>
+    </div>
+  </div>
+</div>
